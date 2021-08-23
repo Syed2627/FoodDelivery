@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="stylet.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <h2>ORDER PLACEMENT</h2>
+              <div class="row">
+                <div class="col-50">
+                  <h3></h3>
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" maxlength="12" name="firstname" placeholder="Name">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="abc@example.com">
+                  <label for="adr">Address</label>
+                  <input type="text" id="adr" name="address">
+                  <label for="prod">Product ID</label>
+                  <input type="text" name="product" id="prod" placeholder="00">
+                  <label for="contact">Contact</label>
+                  <input type="text" id="cont" maxlength="11" placeholder="03xxxxxxxxx">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment Methods</h3>
+                  <label for="payment">Payment Methods</label>
+                  <input type="radio" value="cash" disabled> Cash  <br>
+                  <input type="radio" value="credit" checked> Credit Card <br> <br> <br>
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Exp Year</label>
+                  <input type="text" id="exp" name="exp" placeholder="2022">
+                  </div>
+                </div>
+              </div> 
+              <input type="submit" value="Place Order" class="btn">
+              <a href="./food.html" id="signupbtn"><button>BACK</button></a>  
+              <a href="./index.html" id="signupbtn"><button>HOME</button></a>
+          </div>
+        </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>

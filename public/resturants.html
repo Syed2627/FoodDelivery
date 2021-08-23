@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDox2ahmdXFCYwod83v-TNnanF6PN-Ydsw",
+    authDomain: "dawn-d9dfa.firebaseapp.com",
+    projectId: "dawn-d9dfa",
+    storageBucket: "dawn-d9dfa.appspot.com",
+    messagingSenderId: "207988428335",
+    appId: "1:207988428335:web:d5ef74a557a3852d5800da",
+    measurementId: "G-JS844D0XVT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- As a heading -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+       <a href="index.html"><img src="logo.png" width="70" height="50" alt="logo"></a>
+      <span class="navbar-brand mb-0 h1">Resturants</span>
+      <button class="btn-success" onclick="signout()">Log Out</button>
+    </div>
+  </nav> 
+  <nav class="navbar navbar-expand-lg navbar-primary bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Food Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Chinese</a></li>
+              <li><a class="dropdown-item" href="#">Pizza</a></li>
+              <li><a class="dropdown-item" href="#">Fast Food</a></li>
+              <li><a class="dropdown-item" href="#">Italian</a></li>
+              <li><a class="dropdown-item" href="#">Desi</a></li>
+              <li><a class="dropdown-item" href="#">Dessert</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Best Rated Resturants
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">California Pizza</a></li>
+              <li><a class="dropdown-item" href="#">Broadway</a></li>
+              <li><a class="dropdown-item" href="#">Kababjees</a></li>
+              <li><a class="dropdown-item" href="#">Shaheen Shinwari</a></li>
+              <li><a class="dropdown-item" href="#">Burger Lab</a></li>
+              <li><a class="dropdown-item" href="#">Subway</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="resmain">
+      <br>
+      <a href="food.html"><img src="kababjees.jfif" width="300" height="200" alt="kababjees"></a>
+      <a href="food.html"><img src="subway.jpg" width="300" height="200" alt="subway"></a>
+      <a href="food.html"><img src="kfc.jfif" width="300" height="200" alt="kfc"></a>
+      <a href="food.html"><img src="california.jfif" width="300" height="200" alt="california"></a> <br>
+      <a href="food.html"><img src="broadway.jfif" width="300" height="200" alt="Broadway"></a>
+      <a href="food.html"><img src="burgerlab.jfif" width="300" height="200" alt="burgerlab"></a>
+      <a href="food.html"><img src="greeno.png" width="300" height="200" alt="greeno"></a>
+      <a href="food.html"><img src="shaheen.png" width="300" height="200" alt="shaheen"></a> <br>
+      <a href="food.html"><img src="delizia.jpg" width="300" height="200" alt="delizia"></a>
+      <a href="food.html"><img src="optp.jfif" width="300" height="200" alt="optp"></a>
+      <a href="food.html"><img src="hobnob.png" width="300" height="200" alt="hobnob"></a>
+      <a href="food.html"><img src="bolansajji.jpg" width="300" height="200" alt="bolansajji"></a> <br>
+      <a href="food.html"><img src="burgerclock.png" width="300" height="200" alt="burgerclock"></a>  
+      <a href="https://www.daraz.pk/"><img src="add.jpg" width="605" height="200" alt="advert"></a>
+      <a href="food.html"><img src="onec.png" width="300" height="200" alt="liquidshop"></a> <br>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

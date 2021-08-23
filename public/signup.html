@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDox2ahmdXFCYwod83v-TNnanF6PN-Ydsw",
+    authDomain: "dawn-d9dfa.firebaseapp.com",
+    projectId: "dawn-d9dfa",
+    storageBucket: "dawn-d9dfa.appspot.com",
+    messagingSenderId: "207988428335",
+    appId: "1:207988428335:web:d5ef74a557a3852d5800da",
+    measurementId: "G-JS844D0XVT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- As a heading -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+       <a href="index.html"><img src="logo.png" width="70" height="50" alt="logo"></a>
+      <span class="navbar-brand mb-0 h1">SignUp</span>
+      <a class="nav-link" href="index.html">Back to Home</a>
+    </div>
+  </nav> 
+  <div id="others">
+  <br>
+  <h2>Welcome to Food Delivery.</h2>
+    <p><b>Join us for exciting offers and discounts.</b></p>
+    <p><b><strong>Note:</strong>Please login to your account to get services.</b></p>
+  <div id="signform">
+      <center>
+          <h4 style="color: white;">SignUp</h4>
+      <label for="name" class="content">Name</label> <br>
+      <input type="text" name="name" class="local" id="username" placeholder="UserName" required> <br> <br>
+
+      <label for="email" class="content">Email</label> <br>
+      <input type="email" name="email" class="local" id="email" placeholder="Email@.com" required> <br> <br>
+
+      <label for="password" class="content">Password</label> <br>
+      <input type="password" class="local" name="password" id="password" placeholder="Password" required> <br> <br>
+
+      <label for="country" class="content">Country</label> <br>
+      <select name="country" class="local" id="countrydrop">
+        <option value="pakistan">Pakistan</option>
+        </select> <br> <br> 
+
+      <label for="city" class="content">City</label> <br>
+        <select name="city" class="local" id="citydrop">
+          <option value="karachi">Karachi</option>
+          <option value="islamabad">Islamabad</option>
+          </select> <br> <br> <br>
+      
+          <button onclick="signup()" class="local" style="background-color: rgb(24, 24, 187);" id="signupbtn">SignUp</button>
+           <br> <br>
+        </center>   
+    
+  </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
